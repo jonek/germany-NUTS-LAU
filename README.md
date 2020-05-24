@@ -26,6 +26,25 @@ This project's goal is to prepare publicly available Open Data to be easily used
 
 **Converted to:** `germany-LAU-2019.csv` _(manually)_
 
+### LAU - Geo Data
+
+**Source:** https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/lau  
+**File:** `LAU-2018-01M-SH.zip` https://ec.europa.eu/eurostat/cache/GISCO/geodatafiles/LAU-2018-01M-SH.zip
+
+Inspect the shape file:
+```
+$ ogrinfo -so -al LAU_2018.shp
+$ dbview LAU_2018.dbf | head -12
+$ dbview -b -d ',' -t LAU_2018.dbf | grep DE_ | head -10
+$ mapshaper LAU_2018.shp -calc 'count()' where='GISCO_ID.startsWith("DE")'
+[calc] count() where GISCO_ID.startsWith("DE"):  11119
+```
+
+**Converted to:** `germany-LAU-2019.topo.json` using command:
+```
+$ mapshaper LAU_2018.shp -filter 'GISCO_ID.startsWith("DE")' -proj merc -o germany-LAU-2019.topo.json format=topojson
+```
+
 ## Copyright
 
 For NUTS and LAU data:  
