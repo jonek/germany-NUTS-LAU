@@ -25,3 +25,10 @@ This project's goal is to prepare publicly available Open Data to be easily used
 **File:** `EU-28-LAU-2019-NUTS-2016.xlsx`
 
 **Converted to:** `germany-LAU-2019.csv` _(manually)_
+
+## Copyright
+
+For NUTS and LAU data:  
+EN: © EuroGeographics for the administrative boundaries
+
+For further info, see: [Copyright notice @ eurostat](https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units)
