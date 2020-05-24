@@ -22,7 +22,7 @@ This project's goal is to prepare publicly available Open Data to be easily used
 ## LAU
 
 **Source:** https://ec.europa.eu/eurostat/web/nuts/local-administrative-units
-**File:** `EU-28-LAU-2019-NUTS-2016.xlsx`
+**File:** `EU-28-LAU-2019-NUTS-2016.xlsx` https://ec.europa.eu/eurostat/documents/345175/501971/EU-28-LAU-2019-NUTS-2016.xlsx
 
 **Converted to:** `germany-LAU-2019.csv` _(manually)_
 
